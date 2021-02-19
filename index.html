@@ -13,28 +13,29 @@
 <button id="loadButton" onclick="loadSecondHalf()">LOAD MORE</button>
 
 <div id="myModal" class="modal">
-
-
     <div class="modal-content">
         <div style="display: inline-block">
-        <div class="modColumnImg">
-            <img id="modalImg"/>
-        </div>
+            <div class="modColumnImg">
+                <img id="modalImg"/>
+            </div>
 
-        <div class="modColumnImg" style="width: 40%">
-            <img id="modalUserPhoto" class="profilePic"/>
-            <span id="modalName" class="fullName"></span>
-            <span id="modalDate"></span>
-            <img id="modalSocial" class="socialPic"/>
-            <hr/>
-            <p id="modalText" class="containerText"></p>
-            <img src="./icons/heart.svg" id="modalHeart" class="heartImg">
-            <span id="modalLikes"></span>
-        </div>
-        <span class="close">&times;</span>
+            <div class="modColumnImg" style="width: 40%">
+                <div>
+                    <img id="modalUserPhoto" class="profilePic"/>
+                    <span id="modalName" class="fullName"></span>
+                    <span id="modalDate"></span>
+                    <a id="modalSocLink">
+                        <img id="modalSocial" class="socialPic"/>
+                    </a>
+                </div>
+                <hr/>
+                <p id="modalText" class="containerText"></p>
+                <img src="./icons/heart.svg" id="modalHeart" class="heartImg">
+                <span id="modalLikes"></span>
+            </div>
+            <span class="close">&times;</span>
         </div>
     </div>
-
 </div>
 <script>
     let request = new XMLHttpRequest();
@@ -72,6 +73,9 @@
             name.setAttribute("class", "fullName");
             header.appendChild(name);
 
+            let socialLink = document.createElement("a");
+            socialLink.setAttribute("href", my_JSON_object[i].source_link);
+
             let socialImg = document.createElement("img");
             if(my_JSON_object[i].source_type === "facebook") {
                 socialImg.setAttribute("src", "./icons/facebook.svg");
@@ -80,8 +84,8 @@
                 socialImg.setAttribute("src", "./icons/instagram-logo.svg");
             }
             socialImg.setAttribute("class", "socialPic");
-            socialImg.setAttribute("href", my_JSON_object[i].source_link);
-            header.appendChild(socialImg);
+            socialLink.appendChild(socialImg);
+            header.appendChild(socialLink);
 
             let date = document.createElement("span");
             date.innerHTML = formatDate(my_JSON_object[i].date);
@@ -181,7 +185,7 @@
         document.getElementById("modalUserPhoto").setAttribute("src", element.profile_image);
         document.getElementById("modalName").innerHTML = element.name;
         document.getElementById("modalDate").innerHTML = formatDate(element.date);
-        document.getElementById("modalSocial").setAttribute("href", element.source_link);
+        document.getElementById("modalSocLink").setAttribute("href", element.source_link);
         if(element.source_type === "facebook") {
             document.getElementById("modalSocial").setAttribute("src", "./icons/facebook.svg");
         }
@@ -189,7 +193,7 @@
             document.getElementById("modalSocial").setAttribute("src", "./icons/instagram-logo.svg");
         }
 
-        document.getElementById("modalText").innerHTML = element.caption;
+        document.getElementById("modalText").innerHTML = element.caption.substring(0,100);
         document.getElementById("modalLikes").innerHTML = element.likes;
         modal.style.display = "block";
         console.log(my_JSON_object[parseInt(id, 10)]);

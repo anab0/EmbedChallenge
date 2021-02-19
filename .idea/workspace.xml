@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="86d5b743-1da0-46a9-ba98-287ca1614ad3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +18,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,6 +42,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -66,6 +69,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Modal" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="1043" y="516" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1613752501623">
       <screen x="0" y="0" width="1920" height="1160" />
@@ -75,9 +82,17 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="1000" y="280" width="587" height="801" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1613752471307" />
+    <state x="744" y="426" key="git4idea.ui.GitUnstashDialog" timestamp="1613761357966">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="744" y="426" key="git4idea.ui.GitUnstashDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1613761357966" />
     <state x="1248" y="343" key="run.anything.popup" timestamp="1613606458185">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="1248" y="343" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1613606458185" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1613761872592">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1613761872592" />
   </component>
 </project>
