@@ -51,7 +51,7 @@
       <workItem from="1613601816439" duration="2888000" />
       <workItem from="1613604848306" duration="4039000" />
       <workItem from="1613676082543" duration="16815000" />
-      <workItem from="1613748875413" duration="608000" />
+      <workItem from="1613748875413" duration="2224000" />
     </task>
     <servers />
   </component>
@@ -59,6 +59,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1043" y="516" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1613752501623">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1043" y="516" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1613752501623" />
+    <state x="1000" y="280" width="587" height="801" key="find.popup" timestamp="1613752471307">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1000" y="280" width="587" height="801" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1613752471307" />
     <state x="1248" y="343" key="run.anything.popup" timestamp="1613606458185">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
