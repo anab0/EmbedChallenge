@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86d5b743-1da0-46a9-ba98-287ca1614ad3" name="Default Changelist" comment="" />
+    <list default="true" id="86d5b743-1da0-46a9-ba98-287ca1614ad3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +19,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1od1mkLgr3PwePd3exuDmKAdCx6" />
   <component name="ProjectViewState">
@@ -51,7 +58,8 @@
       <workItem from="1613601816439" duration="2888000" />
       <workItem from="1613604848306" duration="4039000" />
       <workItem from="1613676082543" duration="16815000" />
-      <workItem from="1613748875413" duration="608000" />
+      <workItem from="1613748875413" duration="2413000" />
+      <workItem from="1613756015145" duration="4712000" />
     </task>
     <servers />
   </component>
@@ -59,6 +67,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1043" y="516" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1613752501623">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1043" y="516" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1613752501623" />
+    <state x="1000" y="280" width="587" height="801" key="find.popup" timestamp="1613752471307">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1000" y="280" width="587" height="801" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1613752471307" />
     <state x="1248" y="343" key="run.anything.popup" timestamp="1613606458185">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
