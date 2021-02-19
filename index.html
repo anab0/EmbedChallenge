@@ -12,7 +12,30 @@
 
 <button id="loadButton" onclick="loadSecondHalf()">LOAD MORE</button>
 
+<div id="myModal" class="modal">
 
+
+    <div class="modal-content">
+        <div style="display: inline-block">
+        <div class="modColumnImg">
+            <img id="modalImg"/>
+        </div>
+
+        <div class="modColumnImg" style="width: 40%">
+            <img id="modalUserPhoto" class="profilePic"/>
+            <span id="modalName" class="fullName"></span>
+            <span id="modalDate"></span>
+            <img id="modalSocial" class="socialPic"/>
+            <hr/>
+            <p id="modalText" class="containerText"></p>
+            <img src="./icons/heart.svg" id="modalHeart" class="heartImg">
+            <span id="modalLikes"></span>
+        </div>
+        <span class="close">&times;</span>
+        </div>
+    </div>
+
+</div>
 <script>
     let request = new XMLHttpRequest();
     request.open("GET", "./data.json", false);
@@ -31,8 +54,9 @@
             column.setAttribute("class", "column");
 
             let element = document.createElement("div");
-            element.setAttribute("id", "element" + i);
+            element.setAttribute("id", i);
             element.setAttribute("class", "item");
+            element.addEventListener("click", function() { openModal(element.getAttribute("id")); });
 
             let header = document.createElement("div");
             header.setAttribute("class", "header");
@@ -56,6 +80,7 @@
                 socialImg.setAttribute("src", "./icons/instagram-logo.svg");
             }
             socialImg.setAttribute("class", "socialPic");
+            socialImg.setAttribute("href", my_JSON_object[i].source_link);
             header.appendChild(socialImg);
 
             let date = document.createElement("span");
@@ -146,6 +171,40 @@
         return day + " " + month  + " " + year;
     }
 
+    var modal = document.getElementById("myModal");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    function openModal(id) {
+        let element = my_JSON_object[parseInt(id, 10)];
+        document.getElementById("modalImg").setAttribute("src", element.image);
+        document.getElementById("modalUserPhoto").setAttribute("src", element.profile_image);
+        document.getElementById("modalName").innerHTML = element.name;
+        document.getElementById("modalDate").innerHTML = formatDate(element.date);
+        document.getElementById("modalSocial").setAttribute("href", element.source_link);
+        if(element.source_type === "facebook") {
+            document.getElementById("modalSocial").setAttribute("src", "./icons/facebook.svg");
+        }
+        else if(element.source_type === "instagram") {
+            document.getElementById("modalSocial").setAttribute("src", "./icons/instagram-logo.svg");
+        }
+
+        document.getElementById("modalText").innerHTML = element.caption;
+        document.getElementById("modalLikes").innerHTML = element.likes;
+        modal.style.display = "block";
+        console.log(my_JSON_object[parseInt(id, 10)]);
+
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
 </body>
 </html>
